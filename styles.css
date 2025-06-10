@@ -138,20 +138,25 @@ body {
   overflow: hidden;
 }
 
-.hero-bg {
+.hero-bg,
+.hero-video {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
   z-index: 1;
 }
 
-.hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+@media (max-width: 768px) {
+  .hero-bg,
+  .hero-video {
+    height: 100dvh;
+    min-height: 100dvh;
+  }
 }
 
 .hero-overlay {
@@ -160,7 +165,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(10, 25, 41, 0.7) 0%, rgba(10, 25, 41, 0.3) 50%, transparent 100%);
+  background: linear-gradient(
+    to right,
+    rgba(10, 25, 41, 0.7) 0%,
+    rgba(10, 25, 41, 0.3) 50%,
+    transparent 100%
+  );
 }
 
 .particles {
