@@ -42,48 +42,52 @@ function initializeVideoBackground() {
 
 // Navegación
 function initializeNavigation() {
-  const navToggle = document.getElementById("nav-toggle")
-  const navMenu = document.getElementById("nav-menu")
-  const navLinks = document.querySelectorAll(".nav-link")
-  const header = document.getElementById("header")
+  const navToggle = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
 
   if (navToggle && navMenu) {
     navToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active")
-      const icon = navToggle.querySelector("i")
-
-      if (navMenu.classList.contains("active")) {
-        icon.classList.remove("fa-bars")
-        icon.classList.add("fa-times")
-      } else {
-        icon.classList.remove("fa-times")
-        icon.classList.add("fa-bars")
-      }
-    })
-  }
-
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (navMenu) {
-        navMenu.classList.remove("active")
-        const icon = navToggle?.querySelector("i")
-        if (icon) {
-          icon.classList.remove("fa-times")
-          icon.classList.add("fa-bars")
+      navMenu.classList.toggle("active");
+      document.body.style.overflow = navMenu.classList.contains("active") ? "hidden" : "";
+      const icon = navToggle.querySelector("i");
+      if (icon) {
+        if (navMenu.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
         }
       }
-    })
-  })
+    });
+  }
 
+  // Cerrar menú al hacer clic en enlace
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        navMenu.classList.remove("active");
+        document.body.style.overflow = "";
+        const icon = navToggle?.querySelector("i");
+        if (icon) {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      }
+    });
+  });
+
+  // Efecto de scroll para el header
+  const header = document.getElementById("header");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50 && !isScrolled) {
-      header?.classList.add("scrolled")
-      isScrolled = true
+      header?.classList.add("scrolled");
+      isScrolled = true;
     } else if (window.scrollY <= 50 && isScrolled) {
-      header?.classList.remove("scrolled")
-      isScrolled = false
+      header?.classList.remove("scrolled");
+      isScrolled = false;
     }
-  })
+  });
 }
 
 // Carruseles
@@ -538,3 +542,19 @@ document.addEventListener("keydown", (e) => {
 })
 
 console.log("🚀 Aquaservi - Sitio web renovado cargado correctamente")
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+  });
+
+  // Opcional: cerrar menú al hacer click en un enlace
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+});
