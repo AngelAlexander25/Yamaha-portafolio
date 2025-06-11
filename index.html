@@ -5,27 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aquaservi - Respaldo. Servicio. Calidad</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav">
             <div class="nav-logo">
-                <div class="logo-icon">
-                    <i class="fas fa-anchor"></i>
-                </div>
-                <div class="logo-text">
-                    <span class="logo-main">Aquaservi</span>
-                    <span class="logo-sub">Respaldo. Servicio. Calidad</span>
-                </div>
+                <img src="Imagenes/logo.png" alt="Aquaservi Logo" class="logo-img">
             </div>
             
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#productos" class="nav-link">Productos</a></li>
                 <li><a href="#servicios" class="nav-link">Servicios</a></li>
                 <li><a href="#about" class="nav-link">Nosotros</a></li>
+                <li><a href="#equipo" class="nav-link">Equipo</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
             </ul>
             
             <div class="nav-toggle" id="nav-toggle">
@@ -36,7 +33,6 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <!-- Video de fondo -->
         <div class="hero-bg">
             <video class="hero-video" autoplay muted loop playsinline poster="Imagenes/yate.png">
                 <source src="Imagenes/home.mp4" type="video/mp4">
@@ -45,33 +41,24 @@
             <div class="hero-overlay"></div>
         </div>
         
-        <!-- Partículas flotantes -->
         <div class="particles" id="particles"></div>
         
         <div class="hero-content">
             <div class="hero-logo">
-                <div class="hero-icon">
-                    <i class="fas fa-anchor"></i>
-                </div>
-                <div class="hero-title-container">
-                    <h1 class="hero-title">
-                        Aqua<span class="hero-accent">servi</span> 
-                    </h1>
-                    <p class="hero-subtitle">Respaldo. Servicio. Calidad</p>
-                </div>
+                <!-- Imagen eliminada, solo queda el título y descripción -->
             </div>
             
-            <h2 class="hero-main-title">Descubre el Paraíso a Bordo de Nuestros Yates de Lujo</h2>
+            <h2 class="hero-main-title">30 Años de Experiencia en Servicios Marinos</h2>
             
             <p class="hero-description">
-                Combinamos turismo náutico premium con servicios técnicos especializados. 
-                Vive experiencias inolvidables mientras cuidamos cada detalle de tu embarcación.
+                Servicio técnico autorizado Yamaha con más de tres décadas de experiencia. 
+                Especialistas en mantenimiento, reparación y venta de productos náuticos de la más alta calidad.
             </p>
             
             <div class="hero-buttons">
-                <a href="#servicios" class="btn btn-primary">
+                <a href="#productos" class="btn btn-primary">
                     <i class="fas fa-ship"></i>
-                    Explorar Servicios
+                    Ver Productos
                 </a>
                 <a href="#contacto" class="btn btn-secondary">
                     <i class="fas fa-phone"></i>
@@ -92,7 +79,6 @@
                 </div>
                 <h2 class="section-title about-title-dark">EXPERTOS EN SERVICIO MARINO Y SOLUCIONES NÁUTICAS</h2>
             </div>
-            
             <div class="about-content">
                 <div class="about-image">
                     <img src="Imagenes/yatee.png" alt="Técnicos trabajando en motor marino Yamaha" class="about-img">
@@ -100,40 +86,34 @@
                         <i class="fas fa-wrench"></i>
                     </div>
                 </div>
-                
                 <div class="about-text">
                     <h3>Servicio Técnico Autorizado Yamaha, Refacciones y Venta de Productos Náuticos</h3>
-                    
                     <div class="about-points">
                         <div class="point">
                             <div class="point-dot"></div>
                             <p>Somos un <strong>Servicio Técnico Autorizado Yamaha</strong>, brindando respaldo profesional y atención especializada.</p>
                         </div>
-                        
                         <div class="point">
                             <div class="point-dot"></div>
                             <p>Contamos con una amplia variedad de <strong>refacciones originales</strong> para alargar la vida útil de tu equipo.</p>
                         </div>
-                        
                         <div class="point">
                             <div class="point-dot"></div>
                             <p>Realizamos <strong>mantenimiento y reparación</strong> con herramientas de última tecnología y personal capacitado.</p>
                         </div>
-                        
                         <div class="point">
                             <div class="point-dot"></div>
                             <p>Ofrecemos una línea completa de <strong>productos marinos</strong>: motores fuera de borda, acuamotos, lanchas de fibra de vidrio, remolques y más.</p>
                         </div>
                     </div>
-                    
                     <button class="btn btn-outline">Conocer Más</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid (convertido a formato About Us) -->
-    <section class="services-grid" id="servicios">
+    <!-- Services Section solo con tarjetas (service-card) -->
+    <section class="services-section" id="servicios">
         <div class="container">
             <div class="services-header">
                 <div class="section-icon">
@@ -149,34 +129,63 @@
                     <i class="fas fa-star"></i>
                 </div>
             </div>
-            
-            <div class="services-about-content">
-                <div class="services-about-text">
-                    <p>En <strong>Aquaservi</strong>, nos especializamos en brindar servicios integrales para embarcaciones, combinando experiencia técnica con atención personalizada. Nuestro equipo de profesionales certificados está comprometido con la excelencia en cada proyecto.</p>
-                    
-                    <p>Como <strong>Servicio Técnico Autorizado Yamaha</strong>, ofrecemos mantenimiento especializado, reparaciones de alta calidad y una amplia gama de refacciones originales. Desde motores fuera de borda hasta acuamotos y lanchas de fibra de vidrio, tenemos todo lo que necesitas para tu aventura marina.</p>
-                    
-                    <p>Nuestra misión es mantener tu embarcación en perfectas condiciones mientras tú disfrutas de experiencias inolvidables en el agua. Con más de 15 años de experiencia, somos tu socio confiable en el mundo náutico.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h4>Mantenimiento Preventivo</h4>
+                    <p>Servicios programados para mantener tu motor en óptimas condiciones y prevenir averías costosas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Reparación Especializada</h4>
+                    <p>Diagnóstico y reparación de motores marinos con tecnología de punta y refacciones originales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h4>Venta de Embarcaciones</h4>
+                    <p>Amplia gama de lanchas, yates y acuamotos nuevas con garantía oficial Yamaha.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h4>Asesoría Técnica</h4>
+                    <p>Consultoría especializada para la selección del equipo marino ideal para tus necesidades.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Signature Section -->
-    <section class="signature-section">
+    <section class="signature-section" id="experiencias">
         <div class="container">
             <div class="signature-content">
+                <div class="signature-image">
+                    <img src="Imagenes/moto.png" alt="Catamarán o yate de lujo navegando en aguas cristalinas">
+                </div>
                 <div class="signature-text">
-                    <h2 class="signature-title">Servicios<br>Premium</h2>
+                    <div class="section-divider">
+                        <div class="divider-line"></div>
+                        <i class="fas fa-star"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2 class="section-title about-title-dark">EXPERIENCIAS PREMIUM</h2>
+                    <h3 class="signature-title">Charters de lujo y aventuras exclusivas</h3>
                     <p class="signature-description">
-                      Más que un taller, somos aliados en el rendimiento y la vida útil de tu embarcación. Combinamos experiencia, tecnología y pasión por el mar para ofrecer un servicio integral que va desde el cuidado preventivo hasta las reparaciones más complejas.
-                      Cada detalle cuenta cuando se trata de seguridad, desempeño y estética marina.
-                      En Aqua Servi Yamaha, entendemos que tu embarcación es una extensión de tu estilo de vida y un símbolo de tus aventuras. Por eso, nos comprometemos a ofrecerte un servicio excepcional que no solo cumpla, sino que supere tus expectativas.
+                        Descubre nuestras colecciones exclusivas de <strong>charters de lujo</strong> en destinos inolvidables. 
+                        Creamos experiencias únicas a bordo, combinando elegancia, confort y servicio cinco estrellas.
+                        Trabajamos con los mejores operadores de alquiler y eventos náuticos, con un equipo apasionado 
+                        y altamente calificado para ofrecerte lo mejor del mundo marino.
                     </p>
                     <p class="signature-tagline">
                         ✨ Vive el mar como nunca antes, con alma, estilo y distinción.
                     </p>
-
                     <div class="social-links">
                         <a href="https://www.facebook.com/aquaservicancun" aria-label="Facebook" target="_blank" rel="noopener">
                             <i class="fab fa-facebook"></i>
@@ -186,9 +195,245 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="signature-image">
-                    <img src="Imagenes/moto.png" alt="Catamarán o yate de lujo navegando en aguas cristalinas">
+    <!-- Product Lines Carousel -->
+    <section class="product-lines" id="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Líneas de Productos</h2>
+                <p class="section-subtitle">Calidad y rendimiento para todas tus necesidades marinas</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel" id="productCarousel">
+                    <div class="carousel-slide active">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <div class="slide-icon">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <h3>Línea Productiva</h3>
+                                <p>Motores fuera de borda, acuamotos y embarcaciones para uso comercial y recreativo.</p>
+                                <a href="catalogo.html" class="btn btn-outline">VER CATÁLOGO</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <div class="slide-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3>Línea de Fuerza</h3>
+                                <p>Motores de alta potencia y sistemas de propulsión para embarcaciones profesionales.</p>
+                                <a href="catalogo.html" class="btn btn-outline">VER CATÁLOGO</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="slide-content">
+                            <div class="slide-info">
+                                <div class="slide-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h3>Refacciones Originales</h3>
+                                <p>Partes y componentes originales Yamaha para mantener tu equipo en perfectas condiciones.</p>
+                                <a href="catalogo.html" class="btn btn-outline">VER CATÁLOGO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Carousel -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-subtitle">Testimonios reales de satisfacción y confianza</p>
+            </div>
+            
+            <div class="reviews-carousel">
+                <div class="review-slide active">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excelente servicio, mi motor Yamaha quedó como nuevo. El equipo es muy profesional y los precios son justos."</p>
+                        <div class="reviewer">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Cliente">
+                            <div class="reviewer-info">
+                                <h5>Carlos Mendoza</h5>
+                                <span>Propietario de Yate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-slide">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"30 años de experiencia se notan. Siempre tienen las refacciones que necesito y el servicio es rápido y confiable."</p>
+                        <div class="reviewer">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Cliente">
+                            <div class="reviewer-info">
+                                <h5>Marina González</h5>
+                                <span>Operadora Turística</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-slide">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"La mejor inversión fue traer mi acuamoto aquí. El mantenimiento es impecable y me han ahorrado muchos problemas."</p>
+                        <div class="reviewer">
+                            <img src="/placeholder.svg?height=60&width=60" alt="Cliente">
+                            <div class="reviewer-info">
+                                <h5>Roberto Silva</h5>
+                                <span>Entusiasta Acuático</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="review-indicators">
+                <span class="indicator active" data-review="0"></span>
+                <span class="indicator" data-review="1"></span>
+                <span class="indicator" data-review="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="equipo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Equipo de Expertos</h2>
+                <p class="section-subtitle">Mecánicos certificados con décadas de experiencia</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="Jefe de Taller">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Ing. Miguel Rodríguez</h4>
+                        <span class="position">Jefe de Taller</span>
+                        <p>25 años de experiencia en motores marinos Yamaha. Certificado en sistemas de inyección y diagnóstico electrónico.</p>
+                        <div class="certifications">
+                            <span class="cert">Yamaha Certified</span>
+                            <span class="cert">Marine Tech</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="Especialista en Motores">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Carlos Hernández</h4>
+                        <span class="position">Especialista en Motores</span>
+                        <p>Experto en reparación de motores de 2 y 4 tiempos. Especializado en sistemas de alta potencia y competición.</p>
+                        <div class="certifications">
+                            <span class="cert">Yamaha Pro</span>
+                            <span class="cert">Engine Expert</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="Técnico en Electrónica">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Luis Martínez</h4>
+                        <span class="position">Técnico en Electrónica Marina</span>
+                        <p>Especialista en sistemas electrónicos marinos, GPS, ecosondas y sistemas de navegación avanzados.</p>
+                        <div class="certifications">
+                            <span class="cert">Electronics Pro</span>
+                            <span class="cert">Navigation Systems</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/placeholder.svg?height=300&width=250" alt="Asesor de Ventas">
+                        <div class="member-overlay">
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Ana Patricia López</h4>
+                        <span class="position">Asesora de Ventas Senior</span>
+                        <p>Experta en productos Yamaha con 15 años ayudando a clientes a encontrar la embarcación perfecta para sus necesidades.</p>
+                        <div class="certifications">
+                            <span class="cert">Sales Expert</span>
+                            <span class="cert">Customer Care</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,7 +468,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>Email Principal</h4>
-                                <a href="mailto:info@aquaservi.com">info@aquaservi.com</a>
+                                <a href="mailto:aquaserviyamaha@gmail.com">aquaserviyamaha@gmail.com</a>
                             </div>
                         </div>
                         
@@ -233,7 +478,7 @@
                             </div>
                             <div class="contact-details">
                                 <h4>WhatsApp</h4>
-                                <a href="https://wa.me/529988800590">+52 (998) 880-0590</a>
+                                <a href="https://wa.me/529843175479">+52 (984) 317-5479</a>
                             </div>
                         </div>
                         
@@ -244,17 +489,6 @@
                             <div class="contact-details">
                                 <h4>Ubicación</h4>
                                 <p>Av. Juárez, Sm 85 Mz 13 Lote 07<br>Colonia Puerto Juárez<br>Cancún, Q. Roo</p>
-                                <div class="map-container" style="margin-top:15px; border-radius:12px; overflow:hidden;">
-                                    <iframe 
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.1913214076603!2d-86.80969209999999!3d21.1845574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2f052adced75%3A0xf8c5442f076dcd2b!2sAqua%20Servi%20Yamaha!5e0!3m2!1ses-419!2smx!4v1749584539376!5m2!1ses-419!2smx" 
-                                        width="100%" 
-                                        height="250" 
-                                        style="border:0;" 
-                                        allowfullscreen="" 
-                                        loading="lazy" 
-                                        referrerpolicy="no-referrer-when-downgrade"
-                                        title="Ubicación Aqua Servi Yamaha"></iframe>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,7 +540,7 @@
                                 <option value="mantenimiento">Mantenimiento Preventivo</option>
                                 <option value="refacciones">Refacciones Originales</option>
                                 <option value="reparacion">Reparación Especializada</option>
-                                <option value="charter">Charter de Lujo</option>
+                                <option value="acuamotos">Acuamotos</option>
                                 <option value="otro">Otro</option>
                             </select>
                         </div>
@@ -334,8 +568,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Aquaservi</h3>
-                    <p>Especialistas en servicios marinos y productos Yamaha con más de 15 años de experiencia. Tu confianza es nuestro motor de trabajo.</p>
+                    <img src="/images/logo.png" alt="Aquaservi Logo" class="footer-logo">
+                    <p>30 años de experiencia en servicios marinos y productos Yamaha. Tu confianza es nuestro motor de trabajo.</p>
                     <div class="footer-social">
                         <a href="https://www.facebook.com/aquaservicancun" aria-label="Facebook" target="_blank" rel="noopener">
                             <i class="fab fa-facebook"></i>
@@ -347,38 +581,35 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Servicios</h4>
+                    <h4>Productos</h4>
                     <ul>
                         <li><a href="#">Motores Fuera de Borda</a></li>
-                        <li><a href="#">Mantenimiento Preventivo</a></li>
+                        <li><a href="#">Acuamotos Yamaha</a></li>
+                        <li><a href="#">Lanchas de Fibra</a></li>
                         <li><a href="#">Refacciones Originales</a></li>
-                        <li><a href="#">Reparación Especializada</a></li>
-                        <li><a href="#">Charter de Lujo</a></li>
                         <li><a href="#">Accesorios Marinos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Mantenimiento Preventivo</a></li>
+                        <li><a href="#">Reparación Especializada</a></li>
+                        <li><a href="#">Diagnóstico Electrónico</a></li>
+                        <li><a href="#">Asesoría Técnica</a></li>
+                        <li><a href="#">Garantía Oficial</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Contacto</h4>
                     <div class="footer-contact">
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+529988800590" style="color:inherit;text-decoration:none;">(998) 880 0590</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:aquaserviyamaha@gmail.com" style="color:inherit;text-decoration:none;">aquaserviyamaha@gmail.com</a>
-                        </p>
-                        <p>
-                            <i class="fab fa-whatsapp"></i>
-                            <a href="https://wa.me/529843175479" target="_blank" style="color:inherit;text-decoration:none;">(984) 317 5479</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-map-marker-alt"></i> Puerto Juárez, Cancún
-                        </p>
-                        <p>
-                            <i class="fas fa-clock"></i> Lun-Vie 8AM-5PM
-                        </p>
+                        <p><i class="fas fa-phone"></i> (998) 880-0590</p>
+                        <p><i class="fas fa-envelope"></i> aquaserviyamaha@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> (984) 317-5479</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Puerto Juárez, Cancún</p>
+                        <p><i class="fas fa-clock"></i> Lun-Vie 8AM-5PM</p>
                     </div>
                 </div>
             </div>
@@ -394,5 +625,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+let lastScroll = 0;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > lastScroll && currentScroll > 100) {
+    // Scroll hacia abajo
+    header.classList.add('hide-on-scroll');
+  } else {
+    // Scroll hacia arriba
+    header.classList.remove('hide-on-scroll');
+  }
+  lastScroll = currentScroll;
+});
+</script>
 </body>
 </html>
